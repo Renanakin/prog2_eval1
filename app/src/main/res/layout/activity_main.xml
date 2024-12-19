@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="424dp"
+        android:layout_height="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restau" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="143dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastel"
+        app:srcCompat="@drawable/pastel" />
+
+    <EditText
+        android:id="@+id/etCantidadPastel"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imLogo"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/cazuela"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvPastel"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Pastel de Choclo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imLogo" />
+
+    <EditText
+        android:id="@+id/etnPreTotalChoclo"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="$12000"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidadPastel" />
+
+    <TextView
+        android:id="@+id/tvCazuela"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:text="Cazuela"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etCantidadCazuela"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="44dp"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/etnPreTotalChoclo"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/etnPreTotalCazuela"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="$10000"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidadCazuela" />
+
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="169dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="172dp"
+        android:text="Subtotal: $0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnPreTotalCazuela"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="142dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:text="Total: $0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalPropina" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="52dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSubtotal"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/tvTotalPropina"
+        android:layout_width="162dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Propina: $0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtotal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
